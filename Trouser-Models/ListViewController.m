@@ -12,7 +12,7 @@
 
 @interface ListViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
-    NSArray *tableData;
+    NSMutableArray *tableData;
 }
 
 
@@ -30,7 +30,8 @@
     self.view.userInteractionEnabled=NO;
     [self.view addSubview:activity];
     [activity startAnimating];
-    
+    tableData = [[NSMutableArray alloc]initWithObjects: nil];
+
     PFQuery *query = [PFQuery queryWithClassName:@"ListOfLists"];
     
     [query whereKeyExists:@"objectId"];
@@ -38,7 +39,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
         if(!error)
         {
-            tableData = objects;
+            [tableData addObjectsFromArray:objects];
             
             [_tableViewMain reloadData];
             self.view.userInteractionEnabled=YES;

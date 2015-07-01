@@ -30,6 +30,7 @@
 		4C3895091B44815B00B08ADF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3895081B44815B00B08ADF /* libsqlite3.dylib */; };
 		4C38950B1B44816400B08ADF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C38950A1B44816400B08ADF /* Accounts.framework */; };
 		4C38950D1B44816E00B08ADF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C38950C1B44816E00B08ADF /* Social.framework */; };
+		4CA915AF1B449E0F00913B0E /* AFImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA915AE1B449E0F00913B0E /* AFImageViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		4C3895081B44815B00B08ADF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4C38950A1B44816400B08ADF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4C38950C1B44816E00B08ADF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4CA915AD1B449E0F00913B0E /* AFImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageViewer.h; sourceTree = "<group>"; };
+		4CA915AE1B449E0F00913B0E /* AFImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageViewer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		4C3894C31B447E3500B08ADF /* Trouser-Models */ = {
 			isa = PBXGroup;
 			children = (
+				4CA915AD1B449E0F00913B0E /* AFImageViewer.h */,
+				4CA915AE1B449E0F00913B0E /* AFImageViewer.m */,
 				4C3894EA1B447FB100B08ADF /* CatalogueViewController.h */,
 				4C3894EB1B447FB100B08ADF /* CatalogueViewController.m */,
 				4C3894EC1B447FB100B08ADF /* ListViewController.h */,
@@ -287,6 +292,7 @@
 				4C3894EF1B447FB100B08ADF /* ListViewController.m in Sources */,
 				4C3894EE1B447FB100B08ADF /* CatalogueViewController.m in Sources */,
 				4C3894CA1B447E3500B08ADF /* AppDelegate.m in Sources */,
+				4CA915AF1B449E0F00913B0E /* AFImageViewer.m in Sources */,
 				4C3894C71B447E3500B08ADF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
