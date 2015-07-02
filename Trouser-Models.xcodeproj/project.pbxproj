@@ -18,7 +18,6 @@
 		4C3894C71B447E3500B08ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894C61B447E3500B08ADF /* main.m */; };
 		4C3894CA1B447E3500B08ADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894C91B447E3500B08ADF /* AppDelegate.m */; };
 		4C3894D01B447E3500B08ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3894CE1B447E3500B08ADF /* Main.storyboard */; };
-		4C3894D21B447E3500B08ADF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3894D11B447E3500B08ADF /* Images.xcassets */; };
 		4C3894D51B447E3500B08ADF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3894D31B447E3500B08ADF /* LaunchScreen.xib */; };
 		4C3894E11B447E3500B08ADF /* Trouser_ModelsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894E01B447E3500B08ADF /* Trouser_ModelsTests.m */; };
 		4C3894EE1B447FB100B08ADF /* CatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894EB1B447FB100B08ADF /* CatalogueViewController.m */; };
@@ -39,6 +38,8 @@
 		4C38950B1B44816400B08ADF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C38950A1B44816400B08ADF /* Accounts.framework */; };
 		4C38950D1B44816E00B08ADF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C38950C1B44816E00B08ADF /* Social.framework */; };
 		4CA915AF1B449E0F00913B0E /* AFImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA915AE1B449E0F00913B0E /* AFImageViewer.m */; };
+		4CB47EF61B45C6A2006CAC6E /* kisa-kot-pantolon_edited-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB47EF51B45C6A2006CAC6E /* kisa-kot-pantolon_edited-5.png */; };
+		4CB47EF81B45C71E006CAC6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB47EF71B45C71E006CAC6E /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,6 @@
 		4C3894C81B447E3500B08ADF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C3894C91B447E3500B08ADF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C3894CF1B447E3500B08ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C3894D11B447E3500B08ADF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C3894D41B447E3500B08ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4C3894DA1B447E3500B08ADF /* Trouser-ModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trouser-ModelsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3894DF1B447E3500B08ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +92,8 @@
 		4C38950C1B44816E00B08ADF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4CA915AD1B449E0F00913B0E /* AFImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageViewer.h; sourceTree = "<group>"; };
 		4CA915AE1B449E0F00913B0E /* AFImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageViewer.m; sourceTree = "<group>"; };
+		4CB47EF51B45C6A2006CAC6E /* kisa-kot-pantolon_edited-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kisa-kot-pantolon_edited-5.png"; sourceTree = "<group>"; };
+		4CB47EF71B45C71E006CAC6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +190,6 @@
 				4C3894C81B447E3500B08ADF /* AppDelegate.h */,
 				4C3894C91B447E3500B08ADF /* AppDelegate.m */,
 				4C3894CE1B447E3500B08ADF /* Main.storyboard */,
-				4C3894D11B447E3500B08ADF /* Images.xcassets */,
 				4C3894D31B447E3500B08ADF /* LaunchScreen.xib */,
 				4C3894C41B447E3500B08ADF /* Supporting Files */,
 			);
@@ -198,6 +199,8 @@
 		4C3894C41B447E3500B08ADF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4CB47EF71B45C71E006CAC6E /* Images.xcassets */,
+				4CB47EF51B45C6A2006CAC6E /* kisa-kot-pantolon_edited-5.png */,
 				4C3894C51B447E3500B08ADF /* Info.plist */,
 				4C3894C61B447E3500B08ADF /* main.m */,
 			);
@@ -301,9 +304,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB47EF61B45C6A2006CAC6E /* kisa-kot-pantolon_edited-5.png in Resources */,
+				4CB47EF81B45C71E006CAC6E /* Images.xcassets in Resources */,
 				4C3894D01B447E3500B08ADF /* Main.storyboard in Resources */,
 				4C3894D51B447E3500B08ADF /* LaunchScreen.xib in Resources */,
-				4C3894D21B447E3500B08ADF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
