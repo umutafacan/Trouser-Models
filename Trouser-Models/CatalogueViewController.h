@@ -13,6 +13,7 @@
 @property (nonatomic,strong) NSString *listName;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewTest;
 @property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+@property (strong, nonatomic) IBOutlet UIView *containerView;
 
 
 @end

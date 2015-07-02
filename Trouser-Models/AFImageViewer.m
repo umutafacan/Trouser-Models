@@ -29,7 +29,6 @@
      removingSubview:(UIView *) subview;
 -(void) reset;
 -(void) setContentModeForImageView:(UIImageView *)imgView;
--(UIImageView *)asyncImageViewForPage:(int)page;
 -(void)loadNeighborPagesForPage:(int)page;
 
 @end
@@ -69,19 +68,6 @@
     }
 }
 
--(NSMutableDictionary *)downloadedImages
-{
-    if (!_downloadedImages) _downloadedImages = [NSMutableDictionary dictionary];
-    return _downloadedImages;
-}
-
--(void)setImagesUrls:(NSArray *)imagesUrls
-{
-    if (!_imagesUrls) {
-        _imagesUrls = imagesUrls;
-        self.pageControl.numberOfPages = imagesUrls.count;
-    }
-}
 
 -(void)setDelegate:(id<AFImageViewerDelegate>)delegate
 {
@@ -211,29 +197,24 @@
 
 -(int)nb
 {
-    if (self.imagesUrls) {
-        return [self.imagesUrls count];
-    } else {
+   
         if ([self.delegate respondsToSelector:@selector(numberOfImages)]) {
             return [self.delegate numberOfImages];
         } else {
             return [self.images count];
         }
-    }
+    
 }
 
 -(void) loadImageWithPage:(int)page
 {   
     UIImageView *imgView;
-    if (self.imagesUrls) {
-        imgView = [self asyncImageViewForPage:page];
-    } else {
         if ([self.delegate respondsToSelector:@selector(imageViewForPage:)]) {
             imgView = [self.delegate imageViewForPage:page];
         } else {
             if (self.images) imgView = [[UIImageView alloc] initWithImage: [self.images objectAtIndex:page]];
         }
-    }
+    
     if (imgView) {        
         [self setContentModeForImageView:imgView];
         

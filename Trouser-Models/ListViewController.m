@@ -92,7 +92,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CatalogueViewController *catalogueVC = [[CatalogueViewController alloc]init];
+    CatalogueViewController *catalogueVC = [self.storyboard instantiateViewControllerWithIdentifier:@"catalogVC"];
     PFObject *obj=[tableData objectAtIndex:indexPath.row];
     NSString *str= [obj objectForKey:@"listName"];
     catalogueVC.listName=str;

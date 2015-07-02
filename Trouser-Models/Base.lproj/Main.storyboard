@@ -70,7 +70,7 @@
         <!--Catalogue View Controller-->
         <scene sceneID="1UF-aF-VAC">
             <objects>
-                <viewController id="mne-ZA-I72" customClass="CatalogueViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="catalogVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mne-ZA-I72" customClass="CatalogueViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dZm-mb-Tig"/>
                         <viewControllerLayoutGuide type="bottom" id="rLK-Yc-0Ab"/>
@@ -79,19 +79,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-XO-qsy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="446"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaI-9t-cSg" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="454" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="446" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="k06-UX-dfM"/>
                                     <constraint firstAttribute="height" constant="50" id="pcR-GQ-G4Q"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.15734265734265734" green="0.51398601398601318" blue="0.58391608391608396" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="rLK-Yc-0Ab" firstAttribute="top" secondItem="HaI-9t-cSg" secondAttribute="bottom" id="5hl-2g-eQw"/>
+                            <constraint firstItem="rLK-Yc-0Ab" firstAttribute="top" secondItem="HaI-9t-cSg" secondAttribute="bottom" constant="8" id="5hl-2g-eQw"/>
+                            <constraint firstItem="HaI-9t-cSg" firstAttribute="top" secondItem="zyz-XO-qsy" secondAttribute="bottom" id="9PA-Ot-o76"/>
+                            <constraint firstItem="zyz-XO-qsy" firstAttribute="top" secondItem="dZm-mb-Tig" secondAttribute="bottom" id="9p9-hO-wYp"/>
                             <constraint firstAttribute="centerX" secondItem="HaI-9t-cSg" secondAttribute="centerX" id="a4s-FA-gcS"/>
+                            <constraint firstAttribute="trailing" secondItem="zyz-XO-qsy" secondAttribute="trailing" id="dfq-qT-WgS"/>
+                            <constraint firstItem="zyz-XO-qsy" firstAttribute="leading" secondItem="xd6-fl-hF1" secondAttribute="leading" id="o89-fc-10T"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -99,6 +107,7 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="bannerView" destination="HaI-9t-cSg" id="7Rm-mq-CKi"/>
+                        <outlet property="containerView" destination="zyz-XO-qsy" id="rhP-4m-BkJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jf-08-ljY" userLabel="First Responder" sceneMemberID="firstResponder"/>
