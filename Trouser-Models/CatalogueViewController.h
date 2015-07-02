@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMobileAds;
 
 @interface CatalogueViewController : UIViewController
 @property (nonatomic,strong) NSString *listName;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewTest;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 
 @end

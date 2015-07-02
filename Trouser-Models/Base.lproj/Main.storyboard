@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="suq-ud-s6y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="suq-ud-s6y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="tableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="r3T-at-JmQ">
@@ -33,14 +33,33 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="n3D-tl-s48"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5R-OU-pJL" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="510" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="EIn-8K-BB6"/>
+                                    <constraint firstAttribute="height" constant="50" id="k3x-XD-d4J"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="suq-ud-s6y" secondAttribute="trailing" id="CJx-Tu-IzB"/>
+                            <constraint firstItem="D5R-OU-pJL" firstAttribute="top" secondItem="suq-ud-s6y" secondAttribute="bottom" id="KgJ-uX-dwC"/>
+                            <constraint firstItem="suq-ud-s6y" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="RvX-nB-hGT"/>
+                            <constraint firstItem="D5R-OU-pJL" firstAttribute="top" secondItem="suq-ud-s6y" secondAttribute="bottom" id="cJy-5E-YIq"/>
+                            <constraint firstAttribute="centerX" secondItem="D5R-OU-pJL" secondAttribute="centerX" id="fI1-Fu-rYS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="D5R-OU-pJL" secondAttribute="bottom" constant="8" id="nS6-sb-D2Q"/>
+                            <constraint firstItem="suq-ud-s6y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xKv-AH-I3A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Sn4-gx-KZc"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bannerView" destination="D5R-OU-pJL" id="yQY-zb-aMp"/>
                         <outlet property="tableViewMain" destination="suq-ud-s6y" id="KhP-Zx-gj7"/>
                     </connections>
                 </viewController>
@@ -59,11 +78,28 @@
                     <view key="view" contentMode="scaleToFill" id="xd6-fl-hF1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaI-9t-cSg" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="454" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="k06-UX-dfM"/>
+                                    <constraint firstAttribute="height" constant="50" id="pcR-GQ-G4Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rLK-Yc-0Ab" firstAttribute="top" secondItem="HaI-9t-cSg" secondAttribute="bottom" id="5hl-2g-eQw"/>
+                            <constraint firstAttribute="centerX" secondItem="HaI-9t-cSg" secondAttribute="centerX" id="a4s-FA-gcS"/>
+                        </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="bannerView" destination="HaI-9t-cSg" id="7Rm-mq-CKi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jf-08-ljY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

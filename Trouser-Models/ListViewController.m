@@ -22,6 +22,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = YES;
+    
+    self.bannerView.adUnitID = @"ca-app-pub-1799297564432270/5226414140";
+    self.bannerView.rootViewController = self;
+    
+    GADRequest *request = [GADRequest request];
+    request.testDevices = @[
+                            @"9E14CECB-4E78-40F5-8710-103C2F8ADCF7"
+                            ];
+    
+    
+    
+    
+    [self.bannerView loadRequest:request];
+
     
     UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge ];
     activity.layer.cornerRadius = 5.0f;

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C01BC021B458CC2000ABB96 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC011B458CC2000ABB96 /* GoogleMobileAds.framework */; };
+		4C01BC041B458CE1000ABB96 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC031B458CE1000ABB96 /* AdSupport.framework */; };
+		4C01BC061B458CEE000ABB96 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC051B458CEE000ABB96 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4C01BC081B458CFC000ABB96 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC071B458CFC000ABB96 /* CoreMedia.framework */; };
+		4C01BC0A1B458D02000ABB96 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC091B458D02000ABB96 /* CoreTelephony.framework */; };
+		4C01BC0C1B458D0A000ABB96 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC0B1B458D0A000ABB96 /* EventKit.framework */; };
+		4C01BC0E1B458D0F000ABB96 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC0D1B458D0F000ABB96 /* EventKitUI.framework */; };
+		4C01BC101B458D15000ABB96 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C01BC0F1B458D15000ABB96 /* MessageUI.framework */; };
 		4C3894C71B447E3500B08ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894C61B447E3500B08ADF /* main.m */; };
 		4C3894CA1B447E3500B08ADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894C91B447E3500B08ADF /* AppDelegate.m */; };
 		4C3894D01B447E3500B08ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3894CE1B447E3500B08ADF /* Main.storyboard */; };
@@ -44,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C01BC011B458CC2000ABB96 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		4C01BC031B458CE1000ABB96 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4C01BC051B458CEE000ABB96 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C01BC071B458CFC000ABB96 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4C01BC091B458D02000ABB96 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4C01BC0B1B458D0A000ABB96 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		4C01BC0D1B458D0F000ABB96 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		4C01BC0F1B458D15000ABB96 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4C3894C11B447E3500B08ADF /* Trouser-Models.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trouser-Models.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3894C51B447E3500B08ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C3894C61B447E3500B08ADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,19 +99,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C38950D1B44816E00B08ADF /* Social.framework in Frameworks */,
-				4C38950B1B44816400B08ADF /* Accounts.framework in Frameworks */,
-				4C3895091B44815B00B08ADF /* libsqlite3.dylib in Frameworks */,
-				4C3895071B44815000B08ADF /* libz.dylib in Frameworks */,
 				4C3895051B44814900B08ADF /* SystemConfiguration.framework in Frameworks */,
 				4C3895031B44813E00B08ADF /* StoreKit.framework in Frameworks */,
+				4C01BC101B458D15000ABB96 /* MessageUI.framework in Frameworks */,
+				4C01BC0E1B458D0F000ABB96 /* EventKitUI.framework in Frameworks */,
+				4C01BC0C1B458D0A000ABB96 /* EventKit.framework in Frameworks */,
+				4C01BC0A1B458D02000ABB96 /* CoreTelephony.framework in Frameworks */,
+				4C01BC081B458CFC000ABB96 /* CoreMedia.framework in Frameworks */,
+				4C3894F91B44811800B08ADF /* CoreGraphics.framework in Frameworks */,
+				4C01BC061B458CEE000ABB96 /* AVFoundation.framework in Frameworks */,
+				4C3894F51B44810700B08ADF /* AudioToolbox.framework in Frameworks */,
+				4C01BC041B458CE1000ABB96 /* AdSupport.framework in Frameworks */,
+				4C38950D1B44816E00B08ADF /* Social.framework in Frameworks */,
+				4C38950B1B44816400B08ADF /* Accounts.framework in Frameworks */,
+				4C01BC021B458CC2000ABB96 /* GoogleMobileAds.framework in Frameworks */,
+				4C3895091B44815B00B08ADF /* libsqlite3.dylib in Frameworks */,
+				4C3895071B44815000B08ADF /* libz.dylib in Frameworks */,
 				4C3895011B44813600B08ADF /* Security.framework in Frameworks */,
 				4C3894FF1B44812F00B08ADF /* QuartzCore.framework in Frameworks */,
 				4C3894FD1B44812700B08ADF /* MobileCoreServices.framework in Frameworks */,
 				4C3894FB1B44812100B08ADF /* CoreLocation.framework in Frameworks */,
-				4C3894F91B44811800B08ADF /* CoreGraphics.framework in Frameworks */,
 				4C3894F71B44811000B08ADF /* CFNetwork.framework in Frameworks */,
-				4C3894F51B44810700B08ADF /* AudioToolbox.framework in Frameworks */,
 				4C3894F11B4480AC00B08ADF /* Parse.framework in Frameworks */,
 				4C3894F31B4480DD00B08ADF /* Bolts.framework in Frameworks */,
 			);
@@ -114,6 +138,14 @@
 		4C3894B81B447E3500B08ADF = {
 			isa = PBXGroup;
 			children = (
+				4C01BC0F1B458D15000ABB96 /* MessageUI.framework */,
+				4C01BC0D1B458D0F000ABB96 /* EventKitUI.framework */,
+				4C01BC0B1B458D0A000ABB96 /* EventKit.framework */,
+				4C01BC091B458D02000ABB96 /* CoreTelephony.framework */,
+				4C01BC071B458CFC000ABB96 /* CoreMedia.framework */,
+				4C01BC051B458CEE000ABB96 /* AVFoundation.framework */,
+				4C01BC031B458CE1000ABB96 /* AdSupport.framework */,
+				4C01BC011B458CC2000ABB96 /* GoogleMobileAds.framework */,
 				4C38950C1B44816E00B08ADF /* Social.framework */,
 				4C38950A1B44816400B08ADF /* Accounts.framework */,
 				4C3895081B44815B00B08ADF /* libsqlite3.dylib */,
@@ -127,11 +159,11 @@
 				4C3894F81B44811800B08ADF /* CoreGraphics.framework */,
 				4C3894F61B44811000B08ADF /* CFNetwork.framework */,
 				4C3894F41B44810700B08ADF /* AudioToolbox.framework */,
+				4C3894F01B4480AC00B08ADF /* Parse.framework */,
+				4C3894F21B4480DD00B08ADF /* Bolts.framework */,
 				4C3894C31B447E3500B08ADF /* Trouser-Models */,
 				4C3894DD1B447E3500B08ADF /* Trouser-ModelsTests */,
 				4C3894C21B447E3500B08ADF /* Products */,
-				4C3894F21B4480DD00B08ADF /* Bolts.framework */,
-				4C3894F01B4480AC00B08ADF /* Parse.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -426,6 +458,7 @@
 				INFOPLIST_FILE = "Trouser-Models/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -440,6 +473,7 @@
 				INFOPLIST_FILE = "Trouser-Models/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
